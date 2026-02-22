@@ -2,7 +2,7 @@
 本教程适用于在windows环境（win10/11）  
 保姆级教程，保证电脑小白也能成功运行  
 所有需要的依赖github仓库：[ollama](https://github.com/ollama/ollama?tab=readme-ov-file) [python](https://www.python.org/) [astrbot](https://github.com/AstrBotDevs/AstrBot) [napcat](https://github.com/NapNeko/NapCatQQ)   
-# 安装所需软件
+# 安装所需软件:
 ## 部署python环境（已有的可以跳过）：
 下载 python 安装程序<code>需要python3.11以上的版本</code><br>
 如不能下载推荐使用镜像下载源，如 [阿里云](https://mirrors.aliyun.com/python-release/windows/?spm=a2c6h.25603864.0.0.9bbb2cfeNczwTf) 的python镜像  
@@ -22,9 +22,10 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;[6]&nbsp;点击确定 
 ## 安装ollama：
 下载&nbsp;[ollama](https://ollama.com/download/OllamaSetup.exe)&nbsp;并安装  
-下载完成后直接双击安装就好，安装完成后建议同时下载模型  
-(在模型页选择一个想要的模型，随便发布一句对话就会自动下载)
-## 安装astrbot
+### 模型下载:
+<code>推荐方法:</code>在模型页选择一个想要的模型，随便发布一句对话就会自动下载
+<code>备用方法:</code>在cmd命令行输入ollama run
+## 安装astrbot:
 下载 [astrbot](https://github.com/Raven95676/astrbot-launcher/archive/refs/tags/v0.2.4.zip) 下载后解压:  
 &emsp;&emsp;无法解压的可以下载[bandzip](https://www.bandisoft.com/bandizip/dl.php?web)，安装评价版再解压  
 &emsp;&emsp;完成后进入astrbot目录，在本目录下进入powershell:  
