@@ -25,4 +25,9 @@
 下载完成后直接双击安装就好，安装完成后建议同时下载模型  
 (在模型页选择一个想要的模型，随便发布一句对话就会自动下载)
 ## 安装astrbot
-现在 [astrbot]()
+下载 [astrbot](https://github.com/Raven95676/astrbot-launcher/archive/refs/tags/v0.2.4.zip) 下载后解压:  
+&emsp;&emsp;无法解压的可以下载[bandzip](https://www.bandisoft.com/bandizip/dl.php?web)，安装评价版再解压  
+&emsp;&emsp;完成后进入astrbot目录，在本目录下进入powershell:  
+&emsp;&emsp;<code>推荐方法:</code>在文件夹里上方有路径，直接点击就会出现一串路径，输入powershell  
+&emsp;&emsp;<code>备用方法:</code>点击win+r键，输入powershell并回车，利用cd命令<code>cd [你解压的路径]</code>  
+&emsp;&emsp;将路径中的<code>launcher_astrbot_en.bat</code>拖入powershell里
