@@ -10,8 +10,8 @@
 ### 验证python是否能调用：  
 &emsp;&emsp;1.按住win+r,打开运行框，输入cmd,点击回车  
 &emsp;&emsp;2.在cmd命令行内输入python，可能出现两种情况  
-&emsp;&emsp;&emsp;1.若无报错则说明部署成功，会返回版本号，更新时间等信息并进入python模式  
-&emsp;&emsp;&emsp;2.若提示<code>'python' 不是内部或外部命令，也不是可运行的程序或批处理文件</code>类内容:   
+&emsp;&emsp;&emsp;(1):若无报错则说明部署成功，会返回版本号，更新时间等信息并进入python模式  
+&emsp;&emsp;&emsp;(2):若提示<code>'python' 不是内部或外部命令，也不是可运行的程序或批处理文件</code>类内容:   
 &emsp;&emsp;&emsp;&emsp;&nbsp;可在设置里调试环境变量，将python.exe程序添加进环境变量中:  
 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;[1]&nbsp;打开设置  
 &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;[2]&nbsp;搜索环境变量  
@@ -37,4 +37,28 @@
 ```markdown
 localhost:6185
 ```
-这样就进入了astrbot后台,默认密码和账号都是astrbot,第一次登陆需要重置密码,重置后就没事了
+这样就进入了astrbot后台,默认密码和账号都是astrbot,第一次登陆需要重置密码,重置后就没事了  
+## 安装napcat
+下载[naocat](https://github.com/NapNeko/NapCatQQ/releases/download/v4.17.30/NapCat.Shell.Windows.OneKey.zip) 并解压  
+解压后运行```NapCatInstaller.exe```程序,它会自动安装需要的依赖,完成后打开该目录下的```NapCat.xxxxx.Shell```&emsp;**(其中xxxxx是qq版本)**  
+里面的```napcat.bat```就是启动程序,双击打开就行
+### 使用napcat
+在浏览器中输入:
+```markdown
+localhost:6099
+```
+即可进入napcat后台,提示需要token key 在napcat的运行框里有一段token=xxxxxxxxxxxx **(其中xxxxxxxxxxxx是token key 一般12位)**  
+输入这个key就可以进入登陆页面了
+每次开启需要登陆qq,扫码就可以了  
+# **打通链路**
+## 让astrbot接入ollama
+在astrbot后台中,在模型提供商中选择新增-ollama  
+在右侧已配置的模型中选择获取模型列表,添加你自己下的模型,并启用  
+接下来可以直接在astrbot里直接与模型聊天,点击右上角的chat,试着说句话可以测试是否调用ollama  
+## 让napcat接入astrbot
+1. 在astrbot里选择机器人-创建机器人 消息类别设置为onebotv11并启用它
+2. 在napcat里反向监听astrbot,在网络设置里新建一个websoket客户端,在URL里输入
+```markdown
+ws://localhost:6199//ws
+```
+   
