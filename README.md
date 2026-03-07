@@ -1,4 +1,4 @@
-# -ai-qq-
+# AI接入qq实现以自动回复的功能教程
 本教程适用于在windows环境（win10/11）  
 保姆级教程，保证电脑小白也能成功运行  
 所有需要的依赖github仓库：[ollama](https://github.com/ollama/ollama?tab=readme-ov-file) [python](https://www.python.org/) [astrbot](https://github.com/AstrBotDevs/AstrBot) [napcat](https://github.com/NapNeko/NapCatQQ)   
