@@ -22,7 +22,7 @@
 ## 安装ollama：
 下载&nbsp;[ollama](https://ollama.com/download/OllamaSetup.exe)&nbsp;并安装  
 ### 模型下载:
-<code>推荐方法:</code>在模型页选择一个想要的模型，随便发布一句对话就会自动下载
+<code>推荐方法:</code>在模型页选择一个想要的模型，随便发布一句对话就会自动下载  
 <code>备用方法:</code>在cmd命令行输入ollama run <你要跑的模型>
 ## 安装并使用astrbot:
 下载 [astrbot](https://github.com/Raven95676/astrbot-launcher/archive/refs/tags/v0.2.4.zip) 下载后解压:  
